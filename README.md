@@ -15,7 +15,7 @@ Usage is very simple:
 var sunset = new Date().sunset(51.4541, -2.5920);
 
 //Sunrise at Stonehenge on midsummer's day 2000
-~-1.826189
+
 var sunrise = new Date("2000-06-21").sunrise(51.1788, -1.8262);
 
 //Combine it with geolocation. Sunset tonight at your location.
