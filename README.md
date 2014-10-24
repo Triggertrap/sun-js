@@ -24,6 +24,11 @@ navigator.geolocation.getCurrentPosition(function(position) {
    	var sunset = new Date().sunset(position.coords.latitude, position.coords.longitude);
 });
 
+//You can set a custom zenith to get twilight times. 
+//See the source for available zenith values and their meanings.
+//Get civil dusk for Forks, WA
+var twilight =  new Date().sunset(47.95, -124.38, Date.zenith.CIVIL);
+
 ```
 
 By Matt Kane (@ascorbic). Copyright © 2012 Triggertrap Ltd. All Rights Reserved.
